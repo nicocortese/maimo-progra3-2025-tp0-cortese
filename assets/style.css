@@ -1,0 +1,254 @@
+* {
+    box-sizing: content-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #458AC8;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/imgs/textura.jpg);
+    background-size:contain;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .ephesis-regular {
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+h1, h2, h3 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}  
+
+
+h2{
+    font-size: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: #F0E6FF;
+    border-bottom: 1px solid black;
+}
+ 
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+ 
+}
+.inicio h1 {
+    font-family: "Ephesis", cursive;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-right: 0;
+}
+
+.inicio img{
+    width:100px;
+    margin-top: 5px;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 80px;
+}
+
+header ul a{
+    font-family: "Kanit", sans-serif;
+    color: #172852;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, font-size 0,3 ease-in-out;
+}
+
+header ul a:hover{
+    color:#458AC8;
+    font-size: 20px;
+}
+
+
+.hero{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.hero h1 {
+    color: black;
+    font-size: 40px;
+    line-height: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recetas h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.recetas_grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+
+
+.receta{
+    grid-column: span 3;
+    background-color: #458AC8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.receta a{
+    font-family: "Kanit", sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #172852;
+    border-radius: 10px;
+    padding: 5px 15px;
+    transition: color 0.3s ease-in-out, backgroundcolor 0.3s ease-in-out, font-weight 0.3 ease-in-out;
+}
+
+.receta a:hover{
+    color:#172852;
+    background-color: white;
+    font-weight: 700;
+}
+
+
+.receta h3{
+    color: black;
+    text-align: center;
+}
+
+.receta img {
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+
+.single_content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #172852;
+    margin-top: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    color: #458AC8;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes p {
+    margin-bottom: 0;
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+}
+
+.redes a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    margin-top: 0;
+}
+
+.copyright {
+    text-align: center;
+}
